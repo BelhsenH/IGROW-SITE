@@ -1,0 +1,27 @@
+.contact-section {
+  background: linear-gradient(135deg, #ff6b6b, #f7d794); // fond coloré vif
+  color: #fff;
+
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    input, textarea {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+      &::placeholder {
+        color: #f1f1f1;
+      }
+    }
+
+    button {
+      background: #fff;
+      color: #ff6b6b;
+      transition: 0.3s;
+      &:hover {
+        background: #ffe0e0;
+      }
+    }
+  }
+}

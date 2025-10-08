@@ -1,0 +1,16 @@
+<section id="advantages" class="advantages py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nos Avantages</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" *ngFor="let adv of advantages">
+        <div class="adv-card text-center p-4 h-100 shadow-sm rounded">
+          <div class="adv-icon mb-3">
+            <i class="bi {{adv.icon}} fs-1 text-primary"></i>
+          </div>
+          <h5>{{ adv.title }}</h5>
+          <p>{{ adv.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

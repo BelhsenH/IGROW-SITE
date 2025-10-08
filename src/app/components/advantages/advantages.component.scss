@@ -1,0 +1,31 @@
+.advantages {
+  background: #f8f9fa;
+
+  .adv-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    h5 {
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .adv-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: #e0f0ff;
+      color: #007bff;
+    }
+  }
+}

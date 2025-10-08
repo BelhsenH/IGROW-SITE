@@ -1,0 +1,25 @@
+<section id="Downloadapps" class="apps-section py-5 text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Téléchargez nos applications</h2>
+      <p>Accédez à toutes les fonctionnalités depuis votre smartphone.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let app of apps">
+        <div class="app-card p-4 h-100 text-center rounded shadow-sm bg-primary">
+          <img [src]="app.image" alt="{{app.name}}" class="mb-3 app-img">
+          <h5>{{ app.name }}</h5>
+          <p>{{ app.description }}</p>
+          <div class="d-flex justify-content-center gap-2 mt-3">
+            <a [href]="app.playStore" target="_blank" class="btn btn-light btn-sm">
+              <i class="bi bi-google-play"></i> Play Store
+            </a>
+            <a [href]="app.appStore" target="_blank" class="btn btn-light btn-sm">
+              <i class="bi bi-apple"></i> App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

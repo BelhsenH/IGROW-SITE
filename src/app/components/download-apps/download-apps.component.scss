@@ -1,0 +1,31 @@
+.apps-section {
+  background: #007bff; /* couleur vive */
+  h2 {
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+    color: #f8f9fa;
+  }
+  .app-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    .app-img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    h5 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.9rem;
+      color: #f8f9fa;
+    }
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+}

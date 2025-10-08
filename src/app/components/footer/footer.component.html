@@ -1,0 +1,33 @@
+<footer class="footer-section py-5 text-white">
+  <div class="container">
+    <div class="row">
+
+      <!-- Colonne 1: Logo + entreprise -->
+      <div class="col-md-4 mb-4">
+        <img [src]="logoUrl" alt="Logo" class="mb-3" style="max-width: 150px;">
+        <p>{{ companyName }} – Votre solution complète pour l’entretien automobile et la gestion des véhicules.</p>
+      </div>
+
+      <!-- Colonne 2: Liens utiles -->
+      <div class="col-md-4 mb-4">
+        <h5>Liens utiles</h5>
+        <ul class="list-unstyled">
+          <li *ngFor="let link of usefulLinks">
+            <a [href]="link.link" class="text-white text-decoration-none">{{ link.name }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3: Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p>{{ contactInfo.address }}</p>
+        <p>Téléphone: <a [href]="'tel:' + contactInfo.phone" class="text-white">{{ contactInfo.phone }}</a></p>
+        <p>Email: <a [href]="'mailto:' + contactInfo.email" class="text-white">{{ contactInfo.email }}</a></p>
+      </div>
+
+    </div>
+    <hr class="border-light">
+    <p class="text-center mb-0">&copy; {{ companyName }} {{ 2025 }}</p>
+  </div>
+</footer>

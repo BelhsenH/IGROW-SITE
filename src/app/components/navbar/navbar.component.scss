@@ -1,0 +1,16 @@
+.navbar {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #ff6b6b, #f7d794); // fond moderne
+  .nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover {
+      color: #1a1a1a !important;
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}

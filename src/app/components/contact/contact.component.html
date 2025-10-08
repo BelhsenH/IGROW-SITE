@@ -1,0 +1,26 @@
+<section id="contact" class="contact-section py-5 mt-5 text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Contactez-nous</h2>
+    <p class="text-center mb-5">Une question ? Un partenariat ? Envoyez-nous un message !</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form p-4 rounded shadow">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nom" [(ngModel)]="contact.name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" [(ngModel)]="contact.email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Sujet" [(ngModel)]="contact.subject" name="subject" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message" [(ngModel)]="contact.message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-light w-100 fw-bold">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
